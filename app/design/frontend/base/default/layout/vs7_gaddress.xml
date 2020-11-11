@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<layout>
+    <vs7_gaddress>
+        <reference name="head">
+            <block type="core/template" name="vs7_gaddress" template="vs7_gaddress/gaddress.phtml"/>
+            <action method="addItem" ifconfig="gaddress/general/enable">
+                <type>skin_js</type>
+                <name>vs7_gaddress/gaddress.js</name>
+            </action>
+            <action method="addItem" ifconfig="gaddress/general/enable">
+                <type>skin_css</type>
+                <name>vs7_gaddress/gaddress.css</name>
+            </action>
+        </reference>
+    </vs7_gaddress>
+
+    <checkout_onepage_index>
+        <update handle="vs7_gaddress"></update>
+    </checkout_onepage_index>
+
+    <customer_address_form>
+        <update handle="vs7_gaddress"></update>
+    </customer_address_form>
+</layout>
